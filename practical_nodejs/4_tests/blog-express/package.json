@@ -1,0 +1,19 @@
+{
+  "name": "blog-express",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha test"
+  },
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "stylus": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "superagent": "*",
+    "expect.js": "*"
+  }
+}
