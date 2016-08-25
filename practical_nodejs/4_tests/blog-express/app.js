@@ -1,3 +1,5 @@
+'use strict';
+
 const express = require('express');
 
 const path = require('path');
@@ -17,14 +19,14 @@ app.all('*', (req, res) => {
 
 
 
-var server = http.createServer(app);
-var boot = function() {
+const server = http.createServer(app);
+let boot = function() {
   server.listen(app.get('port'), () => {
    	console.info('Express server listenong on port ' + app.get('port'));
   });
 }
 
-var shutdown = function() {
+let shutdown = function() {
 	server.close();
 }
 
