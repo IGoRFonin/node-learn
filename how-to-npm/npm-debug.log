@@ -1,0 +1,54 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'dist-tag',
+1 verbose cli   'rm',
+1 verbose cli   '@pkg/how-to-npm@1.0.1',
+1 verbose cli   'latest' ]
+2 info using npm@3.10.6
+3 info using node@v4.5.0
+4 verbose dist-tag del latest from @pkg/how-to-npm@1.0.1
+5 silly mapToRegistry name @pkg/how-to-npm@1.0.1
+6 silly mapToRegistry scope (from package name) @pkg
+7 verbose mapToRegistry no registry URL found in name for scope @pkg
+8 silly mapToRegistry using default registry
+9 silly mapToRegistry registry http://localhost:15443/
+10 silly mapToRegistry data Result {
+10 silly mapToRegistry   raw: '@pkg/how-to-npm@1.0.1',
+10 silly mapToRegistry   scope: '@pkg',
+10 silly mapToRegistry   escapedName: '@pkg%2fhow-to-npm',
+10 silly mapToRegistry   name: '@pkg/how-to-npm',
+10 silly mapToRegistry   rawSpec: '1.0.1',
+10 silly mapToRegistry   spec: '1.0.1',
+10 silly mapToRegistry   type: 'version' }
+11 silly mapToRegistry uri http://localhost:15443/@pkg%2fhow-to-npm@1.0.1
+12 verbose request uri http://localhost:15443/-/package/@pkg%2fhow-to-npm@1.0.1/dist-tags
+13 verbose request no auth needed
+14 info attempt registry request try #1 at 6:41:13 PM
+15 verbose request id 361947f1b7f8d64a
+16 http request GET http://localhost:15443/-/package/@pkg%2fhow-to-npm@1.0.1/dist-tags
+17 http 404 http://localhost:15443/-/package/@pkg%2fhow-to-npm@1.0.1/dist-tags
+18 verbose headers { 'content-type': 'application/json',
+18 verbose headers   date: 'Sun, 04 Sep 2016 15:41:13 GMT',
+18 verbose headers   connection: 'keep-alive',
+18 verbose headers   'content-length': '19' }
+19 verbose stack Error: missing : -/package/@pkg%2fhow-to-npm@1.0.1/dist-tags
+19 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+19 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+19 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+19 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+19 verbose stack     at emitTwo (events.js:87:13)
+19 verbose stack     at Request.emit (events.js:172:7)
+19 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+19 verbose stack     at emitOne (events.js:82:20)
+19 verbose stack     at Request.emit (events.js:169:7)
+19 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+20 verbose statusCode 404
+21 verbose cwd /Users/igorfonin/mp/nodeJs/node-learn/how-to-npm
+22 error Darwin 15.0.0
+23 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "dist-tag" "rm" "@pkg/how-to-npm@1.0.1" "latest"
+24 error node v4.5.0
+25 error npm  v3.10.6
+26 error code E404
+27 error 404 missing : -/package/@pkg%2fhow-to-npm@1.0.1/dist-tags
+28 verbose exit [ 1, true ]
