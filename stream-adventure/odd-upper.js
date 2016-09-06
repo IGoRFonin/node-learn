@@ -9,7 +9,7 @@ function write (buffer, encoding, next) {
 		if(i%2) {
 			this.push(buffer.toString().toUpperCase());	
 		} else {
-			this.push(buffer.toString());
+			this.push(buffer.toString().toLowerCase());
 		}
     i++;
     next();
